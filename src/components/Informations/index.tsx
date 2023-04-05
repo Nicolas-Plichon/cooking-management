@@ -1,8 +1,15 @@
-function Informations() {
+interface InformationsProps {
+  name: string
+  time: string
+  difficulty: string
+}
+
+function Informations({ name, time, difficulty }: InformationsProps) {
   return (
     <div>
-      <p>Difficulté :</p>
-      <p>Temps : </p>
+      <p>{name}</p>
+      <p>{`Difficulté : ${difficulty}`}</p>
+      <p>{`Temps : ${time}`}</p>
     </div>
   );
 }

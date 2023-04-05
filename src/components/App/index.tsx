@@ -10,19 +10,26 @@ import Footer from '../Footer';
 function App() {
   // Je charge les recettes dans mon state
   const [recipes] = useState(recipesData);
-
-  console.log('Recettes : ', recipes);
+  const selectedRecipe = recipes[0]; // Pour tester sur la première recette
 
   return (
     <div className="app">
 
       <Header />
 
-      <Ingredients />
+      <Informations
+        name={selectedRecipe.name}
+        time={selectedRecipe.time}
+        difficulty={selectedRecipe.difficulty}
+      />
 
-      <Informations />
+      <Ingredients
+        ingredients={selectedRecipe.ingredients}
+      />
 
-      <Recipe />
+      <Recipe
+        steps={selectedRecipe.preparation}
+      />
 
       <Footer />
 

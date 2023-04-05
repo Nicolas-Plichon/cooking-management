@@ -1,18 +1,20 @@
-function Recipe() {
+interface RecipeProps {
+  steps: string[]
+}
+
+function Recipe({ steps }: RecipeProps) {
   return (
     <div>
-      <div>
-        <p>Etape 1 : </p>
-        <p>Blablabla</p>
-      </div>
-      <div>
-        <p>Etape 2 : </p>
-        <p>Blablabla</p>
-      </div>
-      <div>
-        <p>Etape 3 : </p>
-        <p>Blablabla</p>
-      </div>
+      {steps.map((step, index) => (
+        <div
+          key={step}
+        >
+          <p>{`Etape ${index + 1}`}</p>
+          <p>
+            {step}
+          </p>
+        </div>
+      ))}
     </div>
   );
 }

@@ -1,6 +1,9 @@
 export default [
   {
     name: 'Ramen au Poulet',
+    url: '',
+    time: '45 mn',
+    difficulty: 'Facile',
     ingredients: [
       '2 oeufs',
       '2 filets de poulet',
@@ -18,6 +21,35 @@ export default [
       "Dans une casserole faire chauffer un filet d'huile et faire revenir les cébettes 2-3 minutes.",
       "Ajouter les carottes et champignons, poursuivre la cuisson 2-3 minutes puis ajouter le chou et le laisser un peu 'tomber'.",
     ],
-
+  },
+  {
+    name: 'Blanquette de Poulet',
+    url: 'https://www.amandinecooking.com/blanquette-de-poulet.html',
+    time: '45 mn',
+    difficulty: 'Facile',
+    ingredients: [
+      '700 à 800g de filet de poulet',
+      '1 gros oignon',
+      '2 carottes',
+      '200g de champignons de Paris',
+      '2 feuilles de laurier',
+      '20g de beurre',
+      '30g de maïzena',
+      '25cl de vin blanc',
+      "20cl d'eau",
+      '1 cube de bouillon de volaille',
+      '20cl de crème liquide',
+      "2 jaunes d'oeufs",
+      'sel, poivre',
+    ],
+    preparation: [
+      'Couper le poulet en gros dès de 3-4cm, enrober les morceaux de maïzena.',
+      "Peler et couper les carottes en fines rondelles. Brosser les champignons et les couper en tranches. Peler et émincer l'oignon.",
+      "Dans une cocotte faire fondre le beurre puis y faire revenir l'oignon quelques minutes.",
+      'Ajouter les champignons et laisser colorer.',
+      'Ajouter ensuite les carottes, laisser cuire 5 minutes.',
+      "Verser ensuite le vin blanc, l'eau, le cube de bouillon, le laurier, le poulet, du sel et poivre, bien mélanger et laisser mijoter une trentaine de minutes à couvert en remuant de temps en temps.",
+      'En fin de cuisson ajouter la crème et les jaunes d’œuf battu ensemble et laisser épaissir quelques minutes sans couvrir.',
+    ],
   },
 ];
